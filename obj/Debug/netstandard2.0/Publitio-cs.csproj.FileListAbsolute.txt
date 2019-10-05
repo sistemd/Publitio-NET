@@ -1,0 +1,8 @@
+/home/mogwai/projects/Publitio-cs/bin/Debug/netstandard2.0/Publitio-cs.deps.json
+/home/mogwai/projects/Publitio-cs/bin/Debug/netstandard2.0/Publitio-cs.dll
+/home/mogwai/projects/Publitio-cs/bin/Debug/netstandard2.0/Publitio-cs.pdb
+/home/mogwai/projects/Publitio-cs/obj/Debug/netstandard2.0/Publitio-cs.csprojAssemblyReference.cache
+/home/mogwai/projects/Publitio-cs/obj/Debug/netstandard2.0/Publitio-cs.AssemblyInfoInputs.cache
+/home/mogwai/projects/Publitio-cs/obj/Debug/netstandard2.0/Publitio-cs.AssemblyInfo.cs
+/home/mogwai/projects/Publitio-cs/obj/Debug/netstandard2.0/Publitio-cs.dll
+/home/mogwai/projects/Publitio-cs/obj/Debug/netstandard2.0/Publitio-cs.pdb
