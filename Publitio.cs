@@ -12,10 +12,10 @@ using System.IO;
 namespace Publitio
 {
     /**
-     * <summary>This class is the main interface to the Publitio API.
+     * <summary>This class is the main interface to the https://publit.io website API.
      * For the most up-to-date and complete documentation, see https://publit.io/docs.
      * Note that this library has a dependency on <c>Newtonsoft.Json</c>, and some of the public
-     * methods return instances of <c>Newtonsoft.Json.Linq.JObject</c>. For more information see:
+     * methods return instances of <c>Newtonsoft.Json.Linq.JObject</c>. For more information see
      * https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm and
      * https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JArray.htm.</summary>
      */
@@ -28,11 +28,11 @@ namespace Publitio
         private readonly SHA1 sha1 = new SHA1CryptoServiceProvider();
 
         /**
-         * <summary>Create a PublitioApi object with the given API key and secret</summary>
+         * <summary>Create a PublitioApi object with the given API key and secret.</summary>
          *
-         * <param name="key">Your API key, which you may find on your Publitio dashboard at
+         * <param name="key">Your API key, which you may find on your dashboard at
          * https://publit.io/dashboard.</param>
-         * <param name="secret">Your API secret, which you may find on your Publitio dashboard at
+         * <param name="secret">Your API secret, which you may find on your dashboard at
          * https://publit.io/dashboard.</param>
          */
         public PublitioApi(string key, string secret)
@@ -46,7 +46,7 @@ namespace Publitio
         }
 
         /**
-         * Make a GET request to the specified URI, with the specified query parameters.
+         * <summary>Make a GET request to the specified URI, with the specified query parameters.</summary>
          * <param name="uri">The target URI. It should be relative, such as
          * "/files/info/<fileId>" or "files/info/<fileId>".</param>
          * <param name="query">The query parameters to be encoded into the URL. This will commonly be
@@ -61,7 +61,7 @@ namespace Publitio
             ApiCallAsync(HttpMethod.Get, uri, query);
 
         /**
-         * Make a PUT request to the specified URI, with the specified query parameters.
+         * <summary>Make a PUT request to the specified URI, with the specified query parameters.</summary>
          * <param name="uri">The target URI. It should be relative, such as
          * "/files/update/<fileId>" or "files/update/<fileId>".</param>
          * <param name="query">The query parameters to be encoded into the URL. This will commonly be

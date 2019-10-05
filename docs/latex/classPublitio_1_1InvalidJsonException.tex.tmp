@@ -1,0 +1,38 @@
+\hypertarget{classPublitio_1_1InvalidJsonException}{}\section{Publitio.\+Invalid\+Json\+Exception Class Reference}
+\label{classPublitio_1_1InvalidJsonException}\index{Publitio.\+Invalid\+Json\+Exception@{Publitio.\+Invalid\+Json\+Exception}}
+
+
+This exception gets thrown when the server responds with invalid J\+S\+ON. This might be due to an internal server error, because the U\+RI is invalid, or because the used H\+T\+TP method was incorrect. 
+
+
+
+
+Inheritance diagram for Publitio.\+Invalid\+Json\+Exception\+:
+% FIG 0
+
+
+Collaboration diagram for Publitio.\+Invalid\+Json\+Exception\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPublitio_1_1InvalidJsonException_a375acba87de95a2e1288b9a54b6bedfc}\label{classPublitio_1_1InvalidJsonException_a375acba87de95a2e1288b9a54b6bedfc}} 
+{\bfseries Invalid\+Json\+Exception} (string message)
+\item 
+\mbox{\Hypertarget{classPublitio_1_1InvalidJsonException_af4ba1c3483426d90467ccb14de8fe9cb}\label{classPublitio_1_1InvalidJsonException_af4ba1c3483426d90467ccb14de8fe9cb}} 
+{\bfseries Invalid\+Json\+Exception} (string message, Exception inner)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPublitio_1_1InvalidJsonException_a09f065d710d152f72fd28693b2173f27}\label{classPublitio_1_1InvalidJsonException_a09f065d710d152f72fd28693b2173f27}} 
+static \hyperlink{classPublitio_1_1InvalidJsonException}{Invalid\+Json\+Exception} {\bfseries For\+Json} (string json, string uri)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This exception gets thrown when the server responds with invalid J\+S\+ON. This might be due to an internal server error, because the U\+RI is invalid, or because the used H\+T\+TP method was incorrect.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Invalid\+Json\+Exception.\+cs\end{DoxyCompactItemize}

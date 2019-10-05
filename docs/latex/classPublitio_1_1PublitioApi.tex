@@ -1,0 +1,147 @@
+\hypertarget{classPublitio_1_1PublitioApi}{}\section{Publitio.\+Publitio\+Api Class Reference}
+\label{classPublitio_1_1PublitioApi}\index{Publitio.\+Publitio\+Api@{Publitio.\+Publitio\+Api}}
+
+
+This class is the main interface to the \href{https://publit.io}{\tt https\+://publit.\+io} website A\+PI. For the most up-\/to-\/date and complete documentation, see \href{https://publit.io/docs}{\tt https\+://publit.\+io/docs}. Note that this library has a dependency on {\ttfamily Newtonsoft.\+Json}, and some of the public methods return instances of {\ttfamily Newtonsoft.\+Json.\+Linq.\+J\+Object}. For more information see \href{https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm}{\tt https\+://www.\+newtonsoft.\+com/json/help/html/\+T\+\_\+\+Newtonsoft\+\_\+\+Json\+\_\+\+Linq\+\_\+\+J\+Object.\+htm} and \href{https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JArray.htm}{\tt https\+://www.\+newtonsoft.\+com/json/help/html/\+T\+\_\+\+Newtonsoft\+\_\+\+Json\+\_\+\+Linq\+\_\+\+J\+Array.\+htm}. 
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPublitio_1_1PublitioApi_a811c5cc6ed896f6dc67ed978778f96c0}{Publitio\+Api} (string key, string secret)
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{classPublitio_1_1PublitioApi}{Publitio\+Api} object with the given A\+PI key and secret.\end{DoxyCompactList}\item 
+Task$<$ J\+Object $>$ \hyperlink{classPublitio_1_1PublitioApi_ac85f19513ef13229beb581bd9ade024d}{Get\+Async} (string uri, I\+Enumerable$<$ Key\+Value\+Pair$<$ string, object $>$$>$ query)
+\begin{DoxyCompactList}\small\item\em Make a G\+ET request to the specified U\+RI, with the specified query parameters.\end{DoxyCompactList}\item 
+Task$<$ J\+Object $>$ \hyperlink{classPublitio_1_1PublitioApi_aa938b3d9b61bffa8bb341961252feba3}{Put\+Async} (string uri, I\+Enumerable$<$ Key\+Value\+Pair$<$ string, object $>$$>$ query=null)
+\begin{DoxyCompactList}\small\item\em Make a P\+UT request to the specified U\+RI, with the specified query parameters.\end{DoxyCompactList}\item 
+Task$<$ J\+Object $>$ \hyperlink{classPublitio_1_1PublitioApi_a313b32f45d254eac9e2b91de60622bc9}{Delete\+Async} (string uri)
+\begin{DoxyCompactList}\small\item\em Make a D\+E\+L\+E\+TE request to the specified U\+RI.\end{DoxyCompactList}\item 
+Task$<$ J\+Object $>$ \hyperlink{classPublitio_1_1PublitioApi_ac6d4d7d81b49bad05168f2c4e60bb884}{Upload\+File\+Async} (string uri, I\+Enumerable$<$ Key\+Value\+Pair$<$ string, object $>$$>$ query=null, Stream data=null)
+\begin{DoxyCompactList}\small\item\em Upload a file to the given U\+RL. This method is used to upload watermarks and media files, depending on which U\+RI you use.\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is the main interface to the \href{https://publit.io}{\tt https\+://publit.\+io} website A\+PI. For the most up-\/to-\/date and complete documentation, see \href{https://publit.io/docs}{\tt https\+://publit.\+io/docs}. Note that this library has a dependency on {\ttfamily Newtonsoft.\+Json}, and some of the public methods return instances of {\ttfamily Newtonsoft.\+Json.\+Linq.\+J\+Object}. For more information see \href{https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm}{\tt https\+://www.\+newtonsoft.\+com/json/help/html/\+T\+\_\+\+Newtonsoft\+\_\+\+Json\+\_\+\+Linq\+\_\+\+J\+Object.\+htm} and \href{https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JArray.htm}{\tt https\+://www.\+newtonsoft.\+com/json/help/html/\+T\+\_\+\+Newtonsoft\+\_\+\+Json\+\_\+\+Linq\+\_\+\+J\+Array.\+htm}.
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPublitio_1_1PublitioApi_a811c5cc6ed896f6dc67ed978778f96c0}\label{classPublitio_1_1PublitioApi_a811c5cc6ed896f6dc67ed978778f96c0}} 
+\index{Publitio\+::\+Publitio\+Api@{Publitio\+::\+Publitio\+Api}!Publitio\+Api@{Publitio\+Api}}
+\index{Publitio\+Api@{Publitio\+Api}!Publitio\+::\+Publitio\+Api@{Publitio\+::\+Publitio\+Api}}
+\subsubsection{\texorpdfstring{Publitio\+Api()}{PublitioApi()}}
+{\footnotesize\ttfamily Publitio.\+Publitio\+Api.\+Publitio\+Api (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{string}]{secret }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a \hyperlink{classPublitio_1_1PublitioApi}{Publitio\+Api} object with the given A\+PI key and secret.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Your A\+PI key, which you may find on your dashboard at \href{https://publit.io/dashboard}{\tt https\+://publit.\+io/dashboard}.\\
+\hline
+{\em secret} & Your A\+PI secret, which you may find on your dashboard at \href{https://publit.io/dashboard}{\tt https\+://publit.\+io/dashboard}.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPublitio_1_1PublitioApi_a313b32f45d254eac9e2b91de60622bc9}\label{classPublitio_1_1PublitioApi_a313b32f45d254eac9e2b91de60622bc9}} 
+\index{Publitio\+::\+Publitio\+Api@{Publitio\+::\+Publitio\+Api}!Delete\+Async@{Delete\+Async}}
+\index{Delete\+Async@{Delete\+Async}!Publitio\+::\+Publitio\+Api@{Publitio\+::\+Publitio\+Api}}
+\subsubsection{\texorpdfstring{Delete\+Async()}{DeleteAsync()}}
+{\footnotesize\ttfamily Task$<$J\+Object$>$ Publitio.\+Publitio\+Api.\+Delete\+Async (\begin{DoxyParamCaption}\item[{string}]{uri }\end{DoxyParamCaption})}
+
+
+
+Make a D\+E\+L\+E\+TE request to the specified U\+RI.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & The target U\+RI. It should be relative, such as \char`\"{}/files/delete/$<$file\+Id$>$\char`\"{} or \char`\"{}files/delete/$<$file\+Id$>$\char`\"{}.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}
+await publitioApi.DeleteAsync(\textcolor{stringliteral}{"files/delete/MvHX8Zx5"});
+\end{DoxyCode}
+ \mbox{\Hypertarget{classPublitio_1_1PublitioApi_ac85f19513ef13229beb581bd9ade024d}\label{classPublitio_1_1PublitioApi_ac85f19513ef13229beb581bd9ade024d}} 
+\index{Publitio\+::\+Publitio\+Api@{Publitio\+::\+Publitio\+Api}!Get\+Async@{Get\+Async}}
+\index{Get\+Async@{Get\+Async}!Publitio\+::\+Publitio\+Api@{Publitio\+::\+Publitio\+Api}}
+\subsubsection{\texorpdfstring{Get\+Async()}{GetAsync()}}
+{\footnotesize\ttfamily Task$<$J\+Object$>$ Publitio.\+Publitio\+Api.\+Get\+Async (\begin{DoxyParamCaption}\item[{string}]{uri,  }\item[{I\+Enumerable$<$ Key\+Value\+Pair$<$ string, object $>$$>$}]{query }\end{DoxyParamCaption})}
+
+
+
+Make a G\+ET request to the specified U\+RI, with the specified query parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & The target U\+RI. It should be relative, such as \char`\"{}/files/info/$<$file\+Id$>$\char`\"{} or \char`\"{}files/info/$<$file\+Id$>$\char`\"{}.\\
+\hline
+{\em query} & The query parameters to be encoded into the U\+RL. This will commonly be an instance of {\ttfamily Dictionary$<$string, object$>$}.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}
+await publitioApi.GetAsync(\textcolor{stringliteral}{"/files/list"});
+await publitioApi.GetAsync(\textcolor{stringliteral}{"files/list"}, \textcolor{keyword}{new} Dictionary<string, object>\{ [\textcolor{stringliteral}{"limit"}] = 2 \});
+\end{DoxyCode}
+ \mbox{\Hypertarget{classPublitio_1_1PublitioApi_aa938b3d9b61bffa8bb341961252feba3}\label{classPublitio_1_1PublitioApi_aa938b3d9b61bffa8bb341961252feba3}} 
+\index{Publitio\+::\+Publitio\+Api@{Publitio\+::\+Publitio\+Api}!Put\+Async@{Put\+Async}}
+\index{Put\+Async@{Put\+Async}!Publitio\+::\+Publitio\+Api@{Publitio\+::\+Publitio\+Api}}
+\subsubsection{\texorpdfstring{Put\+Async()}{PutAsync()}}
+{\footnotesize\ttfamily Task$<$J\+Object$>$ Publitio.\+Publitio\+Api.\+Put\+Async (\begin{DoxyParamCaption}\item[{string}]{uri,  }\item[{I\+Enumerable$<$ Key\+Value\+Pair$<$ string, object $>$$>$}]{query = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Make a P\+UT request to the specified U\+RI, with the specified query parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & The target U\+RI. It should be relative, such as \char`\"{}/files/update/$<$file\+Id$>$\char`\"{} or \char`\"{}files/update/$<$file\+Id$>$\char`\"{}.\\
+\hline
+{\em query} & The query parameters to be encoded into the U\+RL. This will commonly be an instance of {\ttfamily Dictionary$<$string, object$>$}.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}
+await publitioApi.PutAsync(\textcolor{stringliteral}{"files/update/MvHX8Zx5"}, \textcolor{keyword}{new} Dictionary<string, object>\{ [\textcolor{stringliteral}{"title"}] = \textcolor{stringliteral}{"x"} \});
+\end{DoxyCode}
+ \mbox{\Hypertarget{classPublitio_1_1PublitioApi_ac6d4d7d81b49bad05168f2c4e60bb884}\label{classPublitio_1_1PublitioApi_ac6d4d7d81b49bad05168f2c4e60bb884}} 
+\index{Publitio\+::\+Publitio\+Api@{Publitio\+::\+Publitio\+Api}!Upload\+File\+Async@{Upload\+File\+Async}}
+\index{Upload\+File\+Async@{Upload\+File\+Async}!Publitio\+::\+Publitio\+Api@{Publitio\+::\+Publitio\+Api}}
+\subsubsection{\texorpdfstring{Upload\+File\+Async()}{UploadFileAsync()}}
+{\footnotesize\ttfamily Task$<$J\+Object$>$ Publitio.\+Publitio\+Api.\+Upload\+File\+Async (\begin{DoxyParamCaption}\item[{string}]{uri,  }\item[{I\+Enumerable$<$ Key\+Value\+Pair$<$ string, object $>$$>$}]{query = {\ttfamily null},  }\item[{Stream}]{data = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Upload a file to the given U\+RL. This method is used to upload watermarks and media files, depending on which U\+RI you use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & The target U\+RI. It should be relative, such as \char`\"{}/files/create\char`\"{} or \char`\"{}files/create\char`\"{}. The only two valid U\+R\+Is for this method are \char`\"{}files/create\char`\"{} and \char`\"{}watermarks/create\char`\"{}.\\
+\hline
+{\em query} & The query parameters to encode into the U\+RL.\\
+\hline
+{\em data} & The file data, given as a {\ttfamily Stream}.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{using} (var f = File.OpenRead(\textcolor{stringliteral}{"path/to/file"}))
+\{
+    await publitioApi.UploadFileAsync(\textcolor{stringliteral}{"files/create"}, \textcolor{keyword}{new} Dictionary\{ [\textcolor{stringliteral}{"title"}] = \textcolor{stringliteral}{"x"} \}, f);
+\}
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Publitio.\+cs\end{DoxyCompactItemize}

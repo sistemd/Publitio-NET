@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Publitio.PublitioApi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPublitio_1_1PublitioApi.html",tooltip="This class is the main interface to the https://publit.io website API. For the most up-to-date and co..."];
+}
