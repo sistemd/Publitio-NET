@@ -15,7 +15,9 @@ namespace Publitio
      * <summary>This class is the main interface to the Publitio API.
      * For the most up-to-date and complete documentation, see https://publit.io/docs.
      * Note that this library has a dependency on <c>Newtonsoft.Json</c>, and some of the public
-     * methods return instances of <c>Newtonsoft.Json.Linq.JObject</c>.</summary>
+     * methods return instances of <c>Newtonsoft.Json.Linq.JObject</c>. For more information see:
+     * https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm and
+     * https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JArray.htm.</summary>
      */
     public class PublitioApi
     {
