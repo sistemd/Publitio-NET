@@ -57,7 +57,7 @@ namespace Publitio
          * await publitioApi.GetAsync("files/list", new Dictionary<string, object>{ ["limit"] = 2 });
          * </code>
          */
-        public Task<JObject> GetAsync(string uri, IEnumerable<KeyValuePair<string, object>> query) =>
+        public Task<JObject> GetAsync(string uri, IEnumerable<KeyValuePair<string, object>> query = null) =>
             ApiCallAsync(HttpMethod.Get, uri, query);
 
         /**
