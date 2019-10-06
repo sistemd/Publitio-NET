@@ -20,11 +20,12 @@ You may read this library's documentation
 [here](https://ennmichael.github.io/Publitio-NET/docs/html/namespacePublitio.html). Check out the [official API documentation](https://publit.io/docs)
 for more detailed info about the Publitio API.
 
-## Code sample
+## Example usage
 
 ```cs
 using System;
 using Publitio;
+using Newtonsoft.Json.Linq;
 
 // ...
 
@@ -47,4 +48,10 @@ using (var file = File.OpenRead("/home/mogwai/ya.png"))
 // List files
 res = await publitio.GetAsync("files/list", new Dictionary<string, object>{ ["limit"] = 3 });
 Console.WriteLine(res);
+
+// Get the ID of the first file
+var files = (JArray)res["files"];
+var firstFile = (JObject)files[0];
+var id = (string)firstFile["id"];
+Console.WriteLine(id)
 ```
