@@ -225,9 +225,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mogwai/projects/Publitio-cs/Publitio-cs.csproj",
-      "projectName": "Publitio-cs",
-      "projectPath": "/home/mogwai/projects/Publitio-cs/Publitio-cs.csproj",
+      "projectUniqueName": "/home/mogwai/projects/Publitio-cs/Publitio-NET.csproj",
+      "projectName": "Publitio-NET",
+      "projectPath": "/home/mogwai/projects/Publitio-cs/Publitio-NET.csproj",
       "packagesPath": "/home/mogwai/.nuget/packages/",
       "outputPath": "/home/mogwai/projects/Publitio-cs/obj/",
       "projectStyle": "PackageReference",

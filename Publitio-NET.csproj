@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Publitio_cs</RootNamespace>
+    <RootNamespace>Publitio</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
