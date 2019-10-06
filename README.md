@@ -6,7 +6,13 @@ Publitio-NET is a C# user library for the
 ## Installing
 
 You can install this package via NuGet.
-See the [package page](https://www.nuget.org/packages/Publitio-NET) for detailed instructions.
+If you're using the .NET CLI tools, run
+
+```sh
+dotnet add package Publitio-NET
+```
+
+See the [package page](https://www.nuget.org/packages/Publitio-NET) for instructions on how to install with different package managers.
 
 ## Documentation
 
